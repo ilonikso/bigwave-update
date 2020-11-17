@@ -1326,7 +1326,7 @@ p {
     background-color: #ffffff;
     display: flex;
     position: relative;
-    box-shadow: 6px 8px 25px rgba(0, 59, 74, 0.2);
+    box-shadow: 6px 15px 35px rgba(0, 59, 74, 0.2);
     width: 100%; }
     .store__item--left {
       max-width: 630px;
@@ -1344,7 +1344,7 @@ p {
       max-width: 710px;
       margin-left: auto;
       margin-right: 30px;
-      box-shadow: -15px 15px 25px rgba(0, 59, 74, 0.2);
+      box-shadow: -15px 15px 35px rgba(0, 59, 74, 0.2);
       margin-bottom: 20px; }
       .store__item--right .store__item-list {
         margin-left: 30px;
