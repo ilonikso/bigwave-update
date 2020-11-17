@@ -1,0 +1,31 @@
+@import "node_modules/normalize.scss/normalize.scss";
+
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "scaffolding.scss";
+@import "common.scss";
+
+@import "blocks/button.scss";
+@import "blocks/partners.scss";
+
+@import "blocks/promo1.scss";
+@import "blocks/product.scss";
+@import "blocks/services.scss";
+@import "blocks/product-text.scss";
+@import "blocks/banner.scss";
+@import "blocks/strategy.scss";
+@import "blocks/works.scss";
+@import "blocks/team.scss";
+@import "blocks/store.scss";
+@import "blocks/contact.scss";
+
+
+// Template partials
+@import "blocks/nav.scss";
+@import "blocks/footer.scss";
+
+
+
+
+

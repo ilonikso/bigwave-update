@@ -1,0 +1,104 @@
+.services {
+    margin-top: 135px;
+
+    &__wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        margin-top: -2px;
+    }
+
+    &__item {
+        list-style: none;
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.8125;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 4px;
+            background-image: url("../img/vector/mark.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__decoration {
+        width: 502px;
+        flex-shrink: 0;
+        margin-top: 0px;
+        margin-right: -95px;
+    }
+
+    &__paragraph{
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services {
+        &__wrapper {
+            overflow: hidden;
+        }
+
+        &__decoration {
+            margin-right: -35px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .services {
+        &__decoration {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin-top: 60px;
+
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__decoration {
+            width: 55%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        &__block {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        &__decoration {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .services {
+        &__decoration {
+            width: 90%;
+        }
+    }
+}

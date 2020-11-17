@@ -1,0 +1,110 @@
+.works {
+    position: relative;
+    margin-top: 170px;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+
+    &__card {
+        text-align: center;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        width: calc((100% - 30px * 3) / 4);
+        box-shadow: 12px 11px 25px rgba($tx-primary, 0.25);
+        background-color: $br-white;
+        box-sizing: border-box;
+        border-radius: 13px;
+        padding-bottom: 10px;
+        min-height: 350px;
+        min-height: 280px;
+        padding-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &-header {
+            font-family: "pr-b";
+            font-size: 1.5em;
+            line-height: 1.125;
+            color: $tx-primary;
+            margin-top: 10px;
+        }
+
+        &-icon{
+            min-height: 52px;
+        }
+
+        &:nth-child(3){
+            .works__card-icon{
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &__decoration {
+        position: absolute;
+        top: 222px;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-image: url("../img/vector/about-line.svg");
+        z-index: -1;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .works {
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__card {
+            width: calc((100% - 30px * 2) / 2);
+            margin-bottom: 30px;
+            min-height: 270px;
+
+            &-header {
+                width: 55%;
+                margin: 0 auto;
+            }
+        }
+
+        &__decoration {
+            top: 280px;
+            background-size: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .works {
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 525px) {
+    .works {
+        &__card {
+            width: calc(100%);
+            max-width: 300px;
+            margin-bottom: 30px;
+            min-height: 270px;
+        }
+
+        &__decoration {
+            top: 580px;
+            background-size: cover;
+        }
+    }
+}

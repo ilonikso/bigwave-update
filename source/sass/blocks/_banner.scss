@@ -1,0 +1,78 @@
+.banner {
+    background-color: $tx-primary;
+    color: $br-white;
+    //background-image: url("../img/vector/touch-decoration.svg");
+    background-image: url("../img/raster/banner-background-decoration.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 62px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-repeat: repeat-y;
+
+    animation: 10s ease-in-out 0s backgroundWave alternate infinite;
+
+    &__header {
+        text-transform: none;
+    }
+
+    &--green {
+        //background-image: url("../img/vector/touch-decoration-green.svg");
+        background-image: url("../img/raster/banner-background-decoration-green.png");
+        padding-top: 36px;
+        padding-bottom: 42px;
+
+        .banner__header {
+            text-transform: uppercase;
+            font-size: 2.3125em;
+            line-height: 1.1351;
+            font-family: "g-bd";
+        }
+
+        .banner__text {
+            max-width: 591px;
+            margin: 0 auto;
+            font-family: "pr-r";
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .banner{
+        background-size: 150%;
+    }
+}
+
+@media(max-width: 768px){
+    .banner{
+        background-size: 175%;
+    }
+}
+
+@media(max-width: 550px){
+    .banner{
+        background-size: 225%;
+        animation-duration: 5s;
+    }
+}
+
+@media(max-width: 375px){
+    .banner{
+        background-size: 250%;
+    }
+}
+
+@keyframes backgroundWave{
+    from{
+        background-position: center -200px;
+    }
+
+    from{
+        background-position: center 0px;
+    }
+}
