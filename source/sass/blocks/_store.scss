@@ -18,7 +18,7 @@
         background-color: $br-white;
         display: flex;
         position: relative;
-        box-shadow: 6px 8px 25px rgba($tx-primary, 0.2);
+        box-shadow: 6px 15px 35px rgba($tx-primary, 0.2);
         width: 100%;
 
         &--left {
@@ -45,7 +45,7 @@
             max-width: 710px;
             margin-left: auto;
             margin-right: 30px;
-            box-shadow: -15px 15px 25px rgba($tx-primary, 0.2);
+            box-shadow: -15px 15px 35px rgba($tx-primary, 0.2);
             margin-bottom: 20px;
 
             .store__item-list {
